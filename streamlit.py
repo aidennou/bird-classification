@@ -19,3 +19,4 @@ if uploaded_file is not None:
     prediction = predict(uploaded_file)
     st.write("Prediction:", prediction)
 
+
