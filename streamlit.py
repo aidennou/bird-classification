@@ -18,3 +18,4 @@ if uploaded_file is not None:
     st.image(uploaded_file, caption="Uploaded Image", use_container_width=True)
     prediction = predict(uploaded_file)
     st.write("Prediction:", prediction)
+
