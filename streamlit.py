@@ -17,7 +17,7 @@ def predict(image):
     img = PILImage.create(image)
     pred_class, pred_idx, outputs = learn.predict(img)
     confidence = outputs[pred_idx].item()
-    return f"{pred_class} ({confidence:.2f} confidence)"
+    return f"{pred_class} ({confidence:.2f} percent sure!)"
 
 uploaded_file = st.file_uploader(
     "Upload a bird image...",
